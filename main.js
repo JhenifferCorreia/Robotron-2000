@@ -60,3 +60,15 @@ function atualizaEstatisticas(peca) {
         elemento.textContent = parseInt(elemento.textContent) + pecas[peca][elemento.dataset.estatistica]
     })
 }
+
+function changeColor(color) {
+    let newRobot = document.createElement("img")
+    let area = document.querySelector(".robotron")
+    let robo = document.querySelector("#robotron")
+
+    newRobot.src = `./img/cores/${color}.png`
+    robo.remove()
+    newRobot.classList.add("robo")
+    newRobot.setAttribute("id", "robotron")
+    area.appendChild(newRobot)
+}

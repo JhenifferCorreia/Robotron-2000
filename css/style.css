@@ -17,7 +17,8 @@ body {
     font-weight: 300;
 }
 
-body, input {
+body,
+input {
     font-family: 'Teko', sans-serif;
 }
 
@@ -45,6 +46,53 @@ main {
     top: -5%;
 }
 
+.bottoesCores {
+    z-index: 99;
+}
+
+#btnAmarelo {
+    background-color: #ffba08;
+}
+
+#btnAzul {
+    background-color: #1e6091;
+}
+
+#btnBranco {
+    background-color: #FFFFFF;
+}
+
+#btnPreto {
+    background-color: #212529;
+}
+
+#btnRosa {
+    background-color: #DA4167;
+}
+
+#btnVermelho {
+    background-color: #6a040f;
+}
+
+.corRobo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25% 0 25% 0;
+    border: none;
+    cursor: pointer;
+    margin-right: 5px;
+    box-shadow: 2px 2px 5px #00000080;
+}
+
+.corRobo:hover {
+    transition: 0.4s;
+    filter: contrast(2);
+    box-shadow: 0px 3px 5px #000000ce;
+}
+
 .titulo {
     transform: rotate(180deg);
     font-weight: 500;
@@ -55,11 +103,11 @@ main {
     line-height: 0.8;
     writing-mode: vertical-rl;
     text-orientation: mixed;
-    color: rgba(255,255,255,0.8)
+    color: rgba(255, 255, 255, 0.8)
 }
 
 .box {
-    background: rgba(0,0,0,0.6);
+    background: rgba(0, 0, 0, 0.6);
     clip-path: polygon(calc(100% - 30px) 0, 100% 30px, 100% calc(100% - 30px), calc(100% - 30px) 100%, 30px 100%, 0 calc(100% - 30px), 0 30px, 30px 0);
     border-left: 5px solid var(--main-cinza);
     height: 80%;
@@ -72,7 +120,8 @@ main {
 }
 
 .montador {
-    height: 100%;;
+    height: 100%;
+    ;
 }
 
 .montador-conteudo {
@@ -210,9 +259,10 @@ main {
 }
 
 @media screen and (max-width: 1600px) {
-    body { 
+    body {
         font-size: 14px;
     }
+
     main {
         width: 90vw;
         height: 80vh;
@@ -221,7 +271,7 @@ main {
 }
 
 @media screen and (max-width: 1200px) {
-    body { 
+    body {
         font-size: 13px;
     }
 
